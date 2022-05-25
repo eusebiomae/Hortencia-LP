@@ -1,0 +1,250 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff2?slpe14') format('woff2'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?slpe14') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?slpe14') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?slpe14##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-prev {
+  &:before {
+    content: $icon-prev; 
+  }
+}
+.icon-next {
+  &:before {
+    content: $icon-next; 
+  }
+}
+.icon-mail {
+  &:before {
+    content: $icon-mail; 
+  }
+}
+.icon-region01 {
+  &:before {
+    content: $icon-region01; 
+  }
+}
+.icon-g10 {
+  &:before {
+    content: $icon-g10; 
+  }
+}
+.icon-region04 {
+  &:before {
+    content: $icon-region04; 
+  }
+}
+.icon-tel {
+  &:before {
+    content: $icon-tel; 
+  }
+}
+.icon-region02 {
+  &:before {
+    content: $icon-region02; 
+  }
+}
+.icon-diferenciais01 {
+  &:before {
+    content: $icon-diferenciais01; 
+  }
+}
+.icon-diferenciais02 {
+  &:before {
+    content: $icon-diferenciais02; 
+  }
+}
+.icon-diferenciais03 {
+  &:before {
+    content: $icon-diferenciais03; 
+  }
+}
+.icon-diferenciais04 {
+  &:before {
+    content: $icon-diferenciais04; 
+  }
+}
+.icon-diferenciais05 {
+  &:before {
+    content: $icon-diferenciais05; 
+  }
+}
+.icon-diferenciais06 {
+  &:before {
+    content: $icon-diferenciais06; 
+  }
+}
+.icon-diferenciais07 {
+  &:before {
+    content: $icon-diferenciais07; 
+  }
+}
+.icon-diferenciais08 {
+  &:before {
+    content: $icon-diferenciais08; 
+  }
+}
+.icon-diferenciais09 {
+  &:before {
+    content: $icon-diferenciais09; 
+  }
+}
+.icon-diferenciais10 {
+  &:before {
+    content: $icon-diferenciais10; 
+  }
+}
+.icon-diferenciais11 {
+  &:before {
+    content: $icon-diferenciais11; 
+  }
+}
+.icon-diferenciais12 {
+  &:before {
+    content: $icon-diferenciais12; 
+  }
+}
+.icon-diferenciais13 {
+  &:before {
+    content: $icon-diferenciais13; 
+  }
+}
+.icon-itens01 {
+  &:before {
+    content: $icon-itens01; 
+  }
+}
+.icon-itens02 {
+  &:before {
+    content: $icon-itens02; 
+  }
+}
+.icon-itens03 {
+  &:before {
+    content: $icon-itens03; 
+  }
+}
+.icon-itens05 {
+  &:before {
+    content: $icon-itens05; 
+  }
+}
+.icon-itens06 {
+  &:before {
+    content: $icon-itens06; 
+  }
+}
+.icon-itens07 {
+  &:before {
+    content: $icon-itens07; 
+  }
+}
+.icon-itens08 {
+  &:before {
+    content: $icon-itens08; 
+  }
+}
+.icon-itens09 {
+  &:before {
+    content: $icon-itens09; 
+  }
+}
+.icon-itens10 {
+  &:before {
+    content: $icon-itens10; 
+  }
+}
+.icon-itens11 {
+  &:before {
+    content: $icon-itens11; 
+  }
+}
+.icon-itens12 {
+  &:before {
+    content: $icon-itens12; 
+  }
+}
+.icon-itens13 {
+  &:before {
+    content: $icon-itens13; 
+  }
+}
+.icon-itens17 {
+  &:before {
+    content: $icon-itens17; 
+  }
+}
+.icon-itens14 {
+  &:before {
+    content: $icon-itens14; 
+  }
+}
+.icon-itens15 {
+  &:before {
+    content: $icon-itens15; 
+  }
+}
+.icon-itens16 {
+  &:before {
+    content: $icon-itens16; 
+  }
+}
+.icon-pin {
+  &:before {
+    content: $icon-pin; 
+  }
+}
+.icon-chat {
+  &:before {
+    content: $icon-chat; 
+  }
+}
+.icon-camera {
+  &:before {
+    content: $icon-camera; 
+  }
+}
+.icon-down {
+  &:before {
+    content: $icon-down; 
+  }
+}
+.icon-close {
+  &:before {
+    content: $icon-close; 
+  }
+}
+.icon-whatsapp {
+  &:before {
+    content: $icon-whatsapp; 
+  }
+}
+.icon-play {
+  &:before {
+    content: $icon-play; 
+  }
+}
+

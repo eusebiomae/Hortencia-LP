@@ -1,0 +1,43 @@
+{ 
+    "nome": "Nome",
+    "title": "",
+    "description": "",
+    "GA": "",
+    "facebook": "",
+    "hubid": "",
+    "telefone": "(11) 9999-9999",
+    "galerias": [
+        {
+            "size_thumb": {"w": 830, "h": 530},
+            "size_thumb_mob": {"w": 480, "h": 320},
+            "path": "images/apto/",
+            "legendas": [
+                "Imagem 1",
+                "Imagem 2",
+                "Imagem 3",
+                "Imagem 4"
+            ]
+        },
+        {
+            "size_thumb": {"w": 830, "h": 530},
+            "size_thumb_mob": {"w": 480, "h": 320},
+            "path": "images/lazer/",
+            "legendas": [
+                "Imagem 1",
+                "Imagem 2",
+                "Imagem 3",
+                "Imagem 4"
+            ]
+        },
+        {
+            "size_thumb": {"w": 600,"h": 0},
+            "size_thumb_mob": {"w": 480,"h": 0},
+            "path": "images/plantas/",
+            "legendas": [
+                "Planta 25 m²",
+                "Planta 30 m²",
+                "Planta 40 m²"
+            ]
+        }
+    ]
+}

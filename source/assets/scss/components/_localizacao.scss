@@ -1,0 +1,11 @@
+.localizacao{
+
+    &-mapa{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 30px;
+        height: 400px;
+        background: #dedede;
+    }
+}

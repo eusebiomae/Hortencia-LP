@@ -1,0 +1,93 @@
+.fachada {
+    padding: 0;
+
+    .container {
+        position: relative;
+        // padding-left: 0;
+        // padding-right: 0;
+
+        @include media-breakpoint-up(lg) {
+            display: flex;
+        }
+    }
+
+    &-img {
+
+        @include media-breakpoint-up(lg) {
+            margin-left: -111px;
+        }
+
+        .bg-img {
+            height: 469px;
+            position: absolute;
+            z-index: -1;
+
+            @include media-breakpoint-up(lg) {
+                height: 610px;
+                width: 634px;
+            }
+        }
+
+        .grupo-img {
+            position: absolute;
+            z-index: -1;
+
+            @include media-breakpoint-up(lg) {
+                position: absolute;
+                bottom: 43px;
+                left: -195px;
+                z-index: -1;
+            }
+        }
+
+        .imagem {
+            height: 469px;
+
+            @include media-breakpoint-up(lg) {
+                width: 489px;
+                height: 610px;
+                margin-top: 44px;
+            }
+        }
+    }
+
+    &-info {
+        margin-top: 28px;
+        align-content: center;
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 115px;
+            margin-left: 115px;
+            width: 635px;
+        }
+
+        .grupo-info{
+            position: absolute;
+            top: 63px;
+            right: -88px;
+            
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
+        }
+
+        h1 {
+            text-transform: uppercase;
+        }
+
+        h2 {
+            margin-top: 20px;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+
+        p {
+            margin-top: 42px;
+            font-size: 17px;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 20px;
+            }
+        }
+    }
+}

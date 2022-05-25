@@ -125,6 +125,26 @@ document.addEventListener("DOMContentLoaded", () => {
         }).mount();
     });
 
+    // Icones
+    document.querySelectorAll('.splide-icones').forEach(el => {
+        new Splide(el, {            
+            focus: 'center',
+            perPage: 3,
+            pagination: false,
+            arrows: true,
+            classes: {
+                prev: 'splide__arrow--prev icon-prev',
+                next: 'splide__arrow--next icon-next'
+            },
+            breakpoints: {
+                640: {
+                    perPage: 1, 
+                    arrows: false,
+                    pagination: true                   
+                }
+            }
+        }).mount();
+    });
 
     // Abas
     document.querySelectorAll('[data-tab]').forEach(el => {

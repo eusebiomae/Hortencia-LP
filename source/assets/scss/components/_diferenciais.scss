@@ -1,0 +1,11 @@
+.diferenciais {
+    padding: 0;
+
+    .container {
+        position: relative;
+
+        @include media-breakpoint-up(lg) {
+            display: flex;
+        }
+    }
+}    

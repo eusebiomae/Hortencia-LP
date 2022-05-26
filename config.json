@@ -8,14 +8,13 @@
     "telefone": "(11) 9999-9999",
     "galerias": [
         {
-            "size_thumb": {"w": 830, "h": 530},
-            "size_thumb_mob": {"w": 480, "h": 320},
-            "path": "images/apto/",
+            "size_thumb": {"w": 600,"h": 0},
+            "size_thumb_mob": {"w": 480,"h": 0},
+            "path": "images/plantas/",
             "legendas": [
-                "Imagem 1",
-                "Imagem 2",
-                "Imagem 3",
-                "Imagem 4"
+                "1 Varanda Gourmet 1 Varanda Técnica 71 m²",
+                "Planta 53 m²",
+                "Planta 40 m²"
             ]
         },
         {
@@ -27,16 +26,6 @@
                 "Imagem 2",
                 "Imagem 3",
                 "Imagem 4"
-            ]
-        },
-        {
-            "size_thumb": {"w": 600,"h": 0},
-            "size_thumb_mob": {"w": 480,"h": 0},
-            "path": "images/plantas/",
-            "legendas": [
-                "Planta 25 m²",
-                "Planta 30 m²",
-                "Planta 40 m²"
             ]
         }
     ]

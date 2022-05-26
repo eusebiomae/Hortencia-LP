@@ -12,10 +12,27 @@ button{
     padding: 0;
 }
 
+.btn{
+    &-cta{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 291px;
+        height: 58px;
+        background: transparent linear-gradient(270deg, #BA2025 0%, #CB4246 100%) 0% 0% no-repeat padding-box;
+        border-radius: 50px;
+        font-size: 22px;
+        color: #fff;
+        font-weight: bolder;
+        border: 4px solid #BA202555;
+    }
+}
 figure{
     display: block;
     margin-bottom: 0;
 }
+
+
 
 .tit{
     font-size: 20px;
@@ -168,7 +185,6 @@ figure{
         background: none;
         font-size: 22px;
         color: #F8A128;
-        background-color: #000;
 
         &::before{
             z-index: 2;

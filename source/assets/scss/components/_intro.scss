@@ -89,10 +89,10 @@
             background: transparent linear-gradient(to left, #F6CB20 0%, #F6CB20 0%, #FFE57B 100%);
             color: #000;
             border-radius: 23px;
+            border: 4px solid #16120255;
             transition: all .2s ease-in-out;
         
             &:hover{
-                background: #F6CB20;
                 color: #fff;
             }
         }

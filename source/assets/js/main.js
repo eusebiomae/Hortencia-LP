@@ -140,7 +140,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 640: {
                     perPage: 1, 
                     arrows: false,
-                    pagination: true                   
+                    pagination: true,
+                    gap: 15
                 }
             }
         }).mount();

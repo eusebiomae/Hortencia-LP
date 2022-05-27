@@ -16,7 +16,7 @@
     }
 
     &-btn{
-        --btn-bg: #{$primary};
+        --btn-bg: #F8A128;
         --btn-color: #fff;
 
         position: relative;
@@ -39,12 +39,16 @@
             font-size: 26px;
             background: var(--btn-bg);
             color: var(--btn-color);
+            border-radius: 15px 0;
+            border: 2px solid #88927F;
         }
 
         span{
             position: absolute;
             top: 0;
-            right: calc(100% - 1px);
+            right: calc(100% - 8px);
+            z-index: 2;
+            border-radius: 5px 0 0 5px;
             display: flex;
             align-items: center;
             padding: 0 30px;
@@ -55,6 +59,8 @@
             visibility: hidden;
             transition: all .2s ease-in-out;
             transform: translate(10px);
+            border: 2px solid #88927F;
+            border-radius: 15px 0;
 
             @include media-breakpoint-down(lg){
                 display: none;

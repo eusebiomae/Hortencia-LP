@@ -1,65 +1,75 @@
 <% index_galeria = 2 %>
 <section class="plantas" id="plantas">
     <div class="container">
-        <img src="../images/plantas.png" alt="">
 
-        <div class="titulo">
-            <h1>Plantas</h1>
-            <p>de 51m² a 71m²</p>
+        <div class="plantas-titulo">
+            <div class="content">                
+                <h1>Plantas</h1>
+                <p>de 51m² a 71m²</p>
+            </div>
         </div>
 
         <% index_galeria = 0 %>
-        <% include galeria %>
 
-        <!-- <div class="tab" data-tab="plantas">
-            <div class="tab-buttons">
-
-                <% galerias[index_galeria].itens.forEach(function(item, i){ %>
-                <button class="tab-btn" data-tab-index="<%= i %>"><%= galerias[index_galeria].legendas[i] %></button>
-                <% }) %>
-
-            </div>
-
-            <div class="tab-content">
-
-                <% 
-                galerias[index_galeria].itens.forEach(function(image, i){
-                    src = galerias[index_galeria].path + 'thumbs/' + image.file;
-                    src_mob = galerias[index_galeria].path + 'thumbs/mob/' + image.file;
-                    src_ampliada = galerias[index_galeria].path + image.file;
-                %>
-
-                <button class="tab-btn" data-tab-index="<%= i %>"><%= galerias[index_galeria].legendas[i] %> <i
-                        class="icon-down"></i></button>
-
-                <div class="tab-item" data-tab-index="<%= i %>">
-                    <div class="plantas-item">
-
-                        <figure>
-                            <a href="<%=src_ampliada%>" class="js-zoom" data-zoom-size="<%=image.w%>x<%=image.h%>"
-                                data-zoom-index="<%=i%>" data-zoom-group="galeria_<%=index_galeria%>">
-                                <picture>
-                                    <source media="(max-width: 640px)" class="lazy" data-srcset="<%=src_mob%>">
-                                    <img class="lazy" data-src="<%=src%>"
-                                        alt="<%=galerias[index_galeria].legendas[i]%>">
-                                </picture>
-                                <% if(galerias[index_galeria].icones) {%>
-                                <div class="icon-<%=galerias[index_galeria].icones[i]%>"></div>
+        <div class="splide splide-plantas">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <% 
+                    galerias[index_galeria].itens.forEach(function(image, i){
+                        src = galerias[index_galeria].path + 'thumbs/' + image.file;
+                        src_mob = galerias[index_galeria].path + 'thumbs/mob/' + image.file;
+                        src_ampliada = galerias[index_galeria].path + image.file;
+                    %>               
+                    <div class="splide__slide">
+                        <div class="item">
+                            <div class="info">
+                                <% if (i == 0) { %>
+                                    <div class="detalhes">
+                                        <p>1 VARANDA GOURMET</p>
+                                        <p>1 VARANDA TÉCNICA 71m²</p>
+                                    </div>
+                                    <div class="metragem">
+                                        <p>71m²</p>
+                                    </div>
                                 <% } %>
-                            </a>
-                            <figcaption><%=galerias[index_galeria].legendas[i]%></figcaption>
-                        </figure>
-
-                        <div class="plantas-infos">
-                            <%=galerias[index_galeria].legendas[i]%>
+    
+                                <% if (i == 1) { %>
+                                    <div class="detalhes">
+                                        <p>1 VARANDA GOURMET</p>
+                                        <p>1 VARANDA TÉCNICA 71m²</p>
+                                    </div>
+                                    <div class="metragem">
+                                        <p>150m²</p>
+                                    </div>
+                                <% } %>
+    
+                                <% if (i == 2) { %>
+                                    <div class="detalhes">
+                                        <p>1 VARANDA GOURMET</p>
+                                        <p>1 VARANDA TÉCNICA 71m²</p>
+                                    </div>
+                                    <div class="metragem">
+                                        <p>1000m²</p>
+                                    </div>
+                                <% } %>
+                            </div>
+    
+                            <figure>
+                                <a href="<%=src_ampliada%>" class="js-zoom" data-zoom-size="<%=image.w%>x<%=image.h%>" data-zoom-index="<%=i%>" data-zoom-group="galeria_<%=index_galeria%>">
+                                    <picture>
+                                        <source media="(max-width: 640px)" srcset="<%=src_mob%>">
+                                        <img data-splide-lazy="<%=src%>" alt="<%=galerias[index_galeria].legendas[i]%>">
+                                    </picture>
+                                </a>                   
+                                <figcaption><%=galerias[index_galeria].legendas[i]%></figcaption>
+                            </figure>                            
                         </div>
-
                     </div>
+                    <% }) %>
                 </div>
-                <% }) %>
             </div>
+        </div>
 
-        </div> -->
         <div class="botao-cta">
             <a href="" class="btn-cta js-open-modal" data-modal-target="email">Fale conosco</a>
         </div>

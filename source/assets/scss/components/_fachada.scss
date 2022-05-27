@@ -3,8 +3,6 @@
 
     .container {
         position: relative;
-        // padding-left: 0;
-        // padding-right: 0;
 
         @include media-breakpoint-up(lg) {
             display: flex;
@@ -12,43 +10,70 @@
     }
 
     &-img {
-
+        position: relative;
+        margin: 0 -20px;
+        padding: 40px 0 0;
         @include media-breakpoint-up(lg) {
-            margin-left: -111px;
+            margin: 0 0 0 -113px;
         }
 
-        .bg-img {
-            height: 469px;
+        &::before{
+            content: '';
+            width: 100%;
+            height: 389px;
+            background: #ba2025;
             position: absolute;
+            top: 0;
+            left: 0;
             z-index: -1;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 56%);
 
             @include media-breakpoint-up(lg) {
-                height: 610px;
-                width: 634px;
+                width: 611px;
+                height: 654px;
+                background: url(../images/bg.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                top: 0;
+                left: calc(50% - 245px);
+                clip-path: none;
             }
         }
 
-        .grupo-img {
+        &::after{
+            content: '';
+            width: 368px;
+            height: 351px;
+            background: url(../images/grupo-fachada.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
             position: absolute;
-            z-index: -1;
+            top: 0;
+            right: -150px;
+            z-index: 1;
 
             @include media-breakpoint-up(lg) {
-                position: absolute;
-                bottom: 43px;
-                left: -195px;
+                top: initial;
+                right: initial;
+                bottom: 40px;
                 z-index: -1;
+                left: -105px;
             }
         }
 
-        .imagem {
+        img {
+            width: 100%;
             height: 469px;
+            object-fit: cover;
 
             @include media-breakpoint-up(lg) {
                 width: 489px;
                 height: 610px;
-                margin-top: 44px;
+                position: relative;
+                bottom: -4px;
             }
         }
+
     }
 
     &-info {
@@ -61,13 +86,9 @@
             width: 635px;
         }
 
-        .grupo-info{
-            position: absolute;
-            top: 63px;
-            right: -88px;
-            
-            @include media-breakpoint-down(sm) {
-                display: none;
+        &::before{
+            @include media-breakpoint-up(lg) {
+                
             }
         }
 

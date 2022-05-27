@@ -8,7 +8,7 @@
     "telefone": "(11) 9999-9999",
     "galerias": [
         {
-            "size_thumb": {"w": 600,"h": 0},
+            "size_thumb": {"w": 1043,"h": 0},
             "size_thumb_mob": {"w": 480,"h": 0},
             "path": "images/plantas/",
             "legendas": [
@@ -18,7 +18,7 @@
             ]
         },
         {
-            "size_thumb": {"w": 830, "h": 530},
+            "size_thumb": {"w": 915, "h": 480},
             "size_thumb_mob": {"w": 480, "h": 320},
             "path": "images/lazer/",
             "legendas": [

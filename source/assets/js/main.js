@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
             lazyLoad: true,
             focus: 'center',
             perPage: 3,
-            fixedWidth: 765,
+            fixedWidth: 850,
             trimSpace: false,
             updateOnMove: true,
             pagination: false,
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
             breakpoints: {
                 640: {
                     perPage: 1,
-                    padding: { right: '10%', left: 20 },
+                    padding: '0',
                     fixedWidth: false,
                     gap: 15,
                     arrows: false,
@@ -125,11 +125,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }).mount();
     });
 
-    // Icones
-    document.querySelectorAll('.splide-icones').forEach(el => {
-        new Splide(el, {            
-            focus: 'center',
-            perPage: 3,
+    document.querySelectorAll('.splide-plantas').forEach(el => {
+        new Splide(el, {
+            lazyLoad: true,
+            perPage: 1,
+            trimSpace: false,
+            updateOnMove: true,
             pagination: false,
             arrows: true,
             classes: {
@@ -138,10 +139,28 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             breakpoints: {
                 640: {
-                    perPage: 1, 
                     arrows: false,
-                    pagination: true,
-                    gap: 15
+                    pagination: true
+                }
+            }
+        }).mount();
+    });
+
+    // Icones
+    document.querySelectorAll('.splide-icones').forEach(el => {
+        new Splide(el, {    
+            type: 'loop',
+            focus: 'center',
+            perPage: 3,
+            autoWidth: true,
+            classes: {
+                prev: 'splide__arrow--prev icon-prev',
+                next: 'splide__arrow--next icon-next'
+            },
+            breakpoints: {
+                640: {
+                    perPage: 1, 
+
                 }
             }
         }).mount();

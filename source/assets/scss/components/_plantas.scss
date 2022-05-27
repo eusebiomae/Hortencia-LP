@@ -1,5 +1,35 @@
 .plantas{
 
+    &-titulo{
+        .content{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            width: 284px;
+            height: 270px;
+            background: url(../images/plantas.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 0 26px;
+            
+        }
+        h1{position: relative;}
+        p{position: relative;}
+    }
+
+    .splide{
+        &__slide{
+            .item{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+        }
+    }
+
     .botao-cta{
         display: flex;
         justify-content: center;
@@ -9,30 +39,4 @@
             margin-top: 41px;
         }
     }
-
-    // &-item{
-    //     padding: 15px 0;
-
-    //     @include media-breakpoint-up(lg){
-    //         display: flex;
-    //         align-items: center;
-    //         justify-content: space-between;
-    //         padding: 30px 50px;
-    //         background: #fff;
-    //         margin-top: 20px;
-    //     }
-        
-    //     figcaption{
-    //         display: none;
-    //     }
-
-    //     img{
-    //         width: 100%;
-    //     }
-        
-    // }
-
-    // &-infos{
-    //     font-size: 30px;
-    // }
 }

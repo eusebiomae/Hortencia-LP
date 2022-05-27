@@ -1,21 +1,66 @@
 .diferenciais{
 
     &-carrossel{
+        position: relative;
+
+        .petalas1{
+            &::before{
+                content: '';
+                width: 50px;
+                height: 50px;
+                background: #f00;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+
+                @include media-breakpoint-up(lg){
+                    top: 0;
+                    left: 150px
+                }
+            }
+        }
+
         .splide {
-            --nav-margin: 400px;
+            --nav-margin: 510px;
             --nav-bg: #000;
+
+            &__track{
+                max-width: 850px;
+                margin: 0 auto;
+            }
             
-            &__slide {
-        
-                border: solid 1px #FF9400;
-                border-radius: 20px;
-                box-shadow: 0px 6px 11px #00000029;
-                margin: 0 37px 0;
-        
+            &__slide {                            
+                
+                &.is-active{
+                    @include media-breakpoint-up(lg){                    
+                        .item{
+                            transform: scale(1);
+                        }
+                    }
+                }
+                
+
                 .item {
-                    display: block;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 284px;
+                    height: 284px;  
                     text-align: center;
                     padding: 20px;
+                    border: solid 1px #FF9400;
+                    border-radius: 20px;
+                    box-shadow: 0px 6px 11px #00000029;   
+                    background: #fff;
+
+                    @include media-breakpoint-up(lg){
+                        transform: scale(0.8);
+                        transition: transform .1s ease-in-out;
+                    }
                 }
         
                 .icone {

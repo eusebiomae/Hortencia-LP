@@ -29,6 +29,8 @@
             display: flex;
             justify-content: space-between;
             align-content: center;
+            z-index: 1;
+            margin-top: 100px;
         }
     }
 
@@ -44,6 +46,12 @@
 
     &-infos {
         color: #000;
+
+        @include media-breakpoint-up(lg) {
+            color: #fff;
+            margin-left: 65px;
+
+        }
     }
 
     &-tit {
@@ -134,6 +142,7 @@
             width: 520px;
             height: 338px;
             z-index: 2;
+            margin-right: 25px;
         }
     }
 

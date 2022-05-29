@@ -1,39 +1,182 @@
-.lazer{
-    
-    &-mais15carrossel{
+.lazer {
+
+    &-mais15carrossel {
+        position: relative;
+        margin-top: 100px;
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 60px;
+        }
+
+        .petalas1 {
+            &::before {
+                content: '';
+                background: url(../images/petalas-lazer1-2.svg);
+                width: 123px;
+                height: 136px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: -35px;
+                left: 128px;
+                z-index: -1;
+
+                @include media-breakpoint-down(sm) {
+                    display: none;
+                }
+            }
+        }
+
+        .petalas2 {
+            &::before {
+                content: '';
+                background: url(../images/petalas-lazer1-2.svg);
+                width: 123px;
+                height: 136px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                bottom: 0;
+                right: 100px;
+                z-index: -1;
+
+                @include media-breakpoint-down(sm) {
+                    display: none;
+                }
+            }
+        }
+
+        .petalas3 {
+            &::before {
+                content: '';
+                background: url(../images/petalas-lazer3-4.svg);
+                width: 123px;
+                height: 136px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: -80px;
+                right: -8px;
+                z-index: -1;
+
+                @include media-breakpoint-up(lg) {
+                    right: 376px;
+                }
+            }
+        }
+
+        .petalas4 {
+            &::before {
+                content: '';
+                background: url(../images/petalas-lazer3-4.svg);
+                width: 104px;
+                height: 100px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                bottom: 28px;
+                left: 330px;
+                z-index: 2;
+
+                @include media-breakpoint-down(sm) {
+                    display: none;
+                }
+            }
+        }
+
         .splide {
-            --nav-margin: 400px;
+            --nav-margin: 510px;
             --nav-bg: #000;
-            
+
+            &__track {
+                max-width: 850px;
+                margin: 0 auto;
+            }
+
             &__slide {
-        
-                border: solid 1px #005BAA;
-                border-radius: 20px;
-                box-shadow: 0px 6px 11px #00000029;
-                margin: 0 37px 0;
-        
+
+                &.is-active {
+                    @include media-breakpoint-up(lg) {
+                        .item {
+                            transform: scale(1);
+                        }
+                    }
+                }
+
+
                 .item {
-                    display: block;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 284px;
+                    height: 284px;
                     text-align: center;
                     padding: 20px;
+                    border: solid 1px #005BAA;
+                    border-radius: 20px;
+                    box-shadow: 0px 6px 11px #00000029;
+                    background: #fff;
+
+                    @include media-breakpoint-up(lg) {
+                        transform: scale(0.8);
+                        transition: transform .1s ease-in-out;
+                    }
                 }
-        
+
                 .icone {
                     font-size: 45px;
                     color: #005BAA;
                 }
-            
+
                 p {
                     text-transform: uppercase;
                     font-size: 20px;
                 }
-            
+
                 .legenda {
                     text-transform: capitalize;
                 }
-            }       
-        
+            }
+
         }
 
     }
+
+    // &-mais15carrossel{
+    //     .splide {
+    //         --nav-margin: 400px;
+    //         --nav-bg: #000;
+
+    //         &__slide {
+
+    //             border: solid 1px #005BAA;
+    //             border-radius: 20px;
+    //             box-shadow: 0px 6px 11px #00000029;
+    //             margin: 0 37px 0;
+
+    //             .item {
+    //                 display: block;
+    //                 text-align: center;
+    //                 padding: 20px;
+    //             }
+
+    //             .icone {
+    //                 font-size: 45px;
+    //                 color: #005BAA;
+    //             }
+
+    //             p {
+    //                 text-transform: uppercase;
+    //                 font-size: 20px;
+    //             }
+
+    //             .legenda {
+    //                 text-transform: capitalize;
+    //             }
+    //         }       
+
+    //     }
+
+    // }
 }

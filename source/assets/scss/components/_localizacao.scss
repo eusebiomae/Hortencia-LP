@@ -4,84 +4,259 @@
         position: relative;
     }
 
-    img {
-        width: 100%;
+    &-faixa-sup {
 
-        &::before {
-            content: '';
-            width: 100%;
-            height: 100%;
-            background: transparent linear-gradient(to left, #000000 0%, #00000000 100%);
-            opacity: 0.94;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-        }
+        background-color: #BA2025;
+        width: 100%;
+        height: 19px;
     }
 
-    &-intro{
+    &-intro {
         display: flex;
         align-items: center;
         position: relative;
         width: 385px;
         height: 372px;
-    
-        @include media-breakpoint-up(lg){
+
+        @include media-breakpoint-up(lg) {
             width: 100%;
             height: 490px;
         }
 
-        .imagem{
+        .imagem {
             width: 100%;
             height: 100%;
             position: absolute;
             top: 0;
             left: 0;
-    
-            img{
+
+            &::before {
+                content: '';
+                width: 100%;
+                height: 100%;
+                background: transparent linear-gradient(to right, #000000, #00000000);
+                opacity: 0.94;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 0;
+            }
+
+            img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                object-position: 0 -40px;
+                object-position: right;
+                
+                @include media-breakpoint-up (lg) {
+                    object-position: 0 -40px;
+                }
             }
+        }
+
+        .tit {
+            margin-top: 20px;
+            font-size: 30px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: uppercase;
+            z-index: 1;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 40px;
+            }
+        }
+
+        .subtit {
+            margin-top: 10px;
+            font-size: 30px;
+            font-weight: 300;
+            color: #fff;
+            text-transform: uppercase;
+            z-index: 1;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 35px;
+            }
+        }
+
+        .foot {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #FDB14B;
+            z-index: 1;
         }
     }
 
     &-infos {
+        color: #000000;
 
+        @include media-breakpoint-up (lg) {
+            margin-top: 63px;
+            margin-left: 210px;
+        }
+    }
 
-        .tit {
-            font-size: 40px;
-            font-weight: 600;
-            text-transform: uppercase;
+    &-grupo {
+        position: relative;
+
+        .grp-loc1 {
+            &::before {
+                content: '';
+                background: url(../images/group-loc1.svg);
+                width: 641px;
+                height: 535px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: -143px;
+                right: -308px;
+                z-index: 1;
+                transform: rotate(-31deg);
+
+                @include media-breakpoint-down(sm) {
+                    display: none;
+                }
+            }
         }
 
-        .subtit {
-            font-size: 35px;
-            font-weight: 300;
-            text-transform: uppercase;
-        }
+        .grp-loc2 {
+            &::before {
+                content: '';
+                background: url(../images/group-loc2.svg);
+                width: 512px;
+                height: 587px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 148px;
+                bottom: 0;
+                left: -529px;
+                z-index: 1;
+                transform: rotate(-28deg);
 
-        .foot {
-            font-size: 20px;
-            font-weight: 600;
-            color: #FDB14B;
+                @include media-breakpoint-down(sm) {
+                    display: none;
+                }
+            }
         }
     }
 
     &-desc {
+        margin-top: 32px;
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 63px;
+        }
+
         .tit-desc {
             font-size: 40px;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 30px;
+                text-align: left;
+                margin-left: 70px;
+                margin-right: 50px;
+            }
         }
     }
 
-    .text {
-        font-size: 20px;
+    .text-1 {
+        font-size: 17px;
+        margin-top: 23px;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 20px;
+            margin-top: 52px;
+        }
     }
 
-    // &-icons {
+    &-icons {
+        .text-2 {
+            font-size: 17px;
+            margin-top: 26px;
 
-    // }
+            @include media-breakpoint-up(lg) {
+                margin-top: 34px;
+                font-size: 20px;
+            }
+        }
+
+        ul {
+            margin-top: 32px;
+            margin-bottom: 50px;
+            margin-left: -30px;
+
+            @include media-breakpoint-up(lg) {
+                display: flex;
+            }
+        }
+
+        li {
+            list-style-type: none;
+            display: flex;
+            margin-bottom: 54px;
+
+            @include media-breakpoint-up(lg) {
+                display: flex;
+                margin-bottom: initial;
+            }
+
+            .petalas {
+                &::before {
+                    content: '';
+                    background: url(../images/petalas-loc-itens.svg);
+                    background-repeat: no-repeat;
+                    width: 54px;
+                    height: 78px;
+                    z-index: -1;
+                    display: flex;
+                    position: absolute;
+    
+                    @include media-breakpoint-up (lg) {
+                        display: flex;
+                        position: absolute;
+                        width: 54px;
+                        height: 78px;
+    
+                    }
+                }
+            }
+
+            i {
+                display: flex;
+                margin-right: 25px;
+                margin-left: 10px;
+                margin-top: 15px;
+                font-size: 25px;
+                color: #fff;
+
+            }
+
+            p {
+                margin-right: 15px;
+                align-self: center;
+                font-size: 17px;
+
+                @include media-breakpoint-up (lg) {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .text-3 {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .botao-cta {
+        @include media-breakpoint-down (sm) {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+    }
 
 }

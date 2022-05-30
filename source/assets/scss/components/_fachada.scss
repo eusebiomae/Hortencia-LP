@@ -9,15 +9,40 @@
         }
     }
 
+    &-grupo {
+        position: relative;
+
+        .grp-fachada {
+            &::before {
+                content: '';
+                background: url(../images/grupo-info.svg);
+                width: 295px;
+                height: 165px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 93px;
+                right: 0;
+                z-index: 2;
+
+                @include media-breakpoint-down(sm) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+
     &-img {
         position: relative;
         margin: 0 -20px;
         padding: 40px 0 0;
+
         @include media-breakpoint-up(lg) {
             margin: 0 0 0 -113px;
         }
 
-        &::before{
+        &::before {
             content: '';
             width: 100%;
             height: 389px;
@@ -40,7 +65,7 @@
             }
         }
 
-        &::after{
+        &::after {
             content: '';
             width: 368px;
             height: 351px;
@@ -86,10 +111,8 @@
             width: 635px;
         }
 
-        &::before{
-            @include media-breakpoint-up(lg) {
-                
-            }
+        &::before {
+            @include media-breakpoint-up(lg) {}
         }
 
         h1 {

@@ -1,7 +1,20 @@
-.plantas{
+.plantas {
 
-    &-titulo{
-        .content{
+    &-faixa-sup {
+        position: absolute;
+        background-color: #010101;
+        width: 100%;
+        height: 58px;
+    }
+
+    &-titulo {
+
+        @include media-breakpoint-down (sm) {
+            display: flex;
+            justify-content: center;
+        }
+
+        .content {
             display: flex;
             align-items: flex-start;
             justify-content: center;
@@ -13,15 +26,55 @@
             background-size: cover;
             background-repeat: no-repeat;
             padding: 0 26px;
-            
+
         }
-        h1{position: relative;}
-        p{position: relative;}
+
+        h1 {
+            position: relative;
+            font-size: 40px;
+            text-transform: uppercase;
+            color: #fff;
+            margin-top: -25px;
+        }
+
+        p {
+            position: relative;
+            font-size: 40px;
+            text-transform: uppercase;
+            color: #fff;
+            width: max-content;
+        }
     }
 
-    .splide{
-        &__slide{
-            .item{
+    &-grupo {
+        position: relative;
+
+        .grp-plantas {
+            &::before {
+                content: '';
+                background: url(../images/grupo-info.svg);
+                width: 295px;
+                height: 165px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 93px;
+                right: 0;
+                z-index: 2;
+
+                @include media-breakpoint-down(sm) {
+                    width: 117px;
+                    height: 66px;
+                    top: 260px;
+                    right: -68px;
+                }
+            }
+        }
+    }
+
+    .splide {
+        &__slide {
+            .item {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -30,7 +83,7 @@
         }
     }
 
-    .botao-cta{
+    .botao-cta {
         display: flex;
         justify-content: center;
         margin-top: 64px;

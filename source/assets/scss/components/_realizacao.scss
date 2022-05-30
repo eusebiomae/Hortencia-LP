@@ -1,4 +1,91 @@
 .realizacao{
     background: #fff;
+
+    .container {
+        position: relative;
+    }
+
+    .titulo {
+        font-size: 15px;
+        letter-spacing: 0.6px;
+        text-align: center;
+        justify-content: center;
+
+        @include media-breakpoint-up (lg) {
+            display: flex;
+        }
+    }
+
+    &-logos {
+        margin-top: 28px;
+        align-items: center;
+        
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+        
+
+        img {
+            width: auto;
+            height: 93px;
+
+            @include media-breakpoint-up(lg) {
+                height: 86px;
+            }
+
+        };
+
+        .yees {
+            width: auto;
+            height: auto;
+
+            @include media-breakpoint-down (sm) {
+                margin-top: 35px;
+            }
+        }
+    }
+
+    &-logo-vendas {
+        margin-top: 28px;
+        align-items: center;
+
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 64px;
+        }
+
+        .bloco {
+
+            @include media-breakpoint-up (lg) {
+                display: flex;
+                gap: 35px;
+            }
+
+            p {
+                font-size: 15px;
+                letter-spacing: 0.6px;
+                text-align: center;
+                justify-content: center;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 15px;
+                    align-self: center;
+                }
+            }
+
+            img {
+                width: auto;
+                height: 74px;
+
+                @include media-breakpoint-down(sm) {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
     
 }

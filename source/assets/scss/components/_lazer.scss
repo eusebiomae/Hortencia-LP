@@ -1,5 +1,111 @@
 .lazer {
 
+    &-grupo {
+        position: relative;
+
+        .grp-lazer {
+            &::before {
+                content: '';
+                background: url(../images/grupo-diferenciais.svg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 150px;
+                height: 84px;
+                position: absolute;
+                top: 0;
+                left: -54px;
+                z-index: 2;
+
+                @include media-breakpoint-up (lg) {
+                    width: 308px;
+                    height: 172px;
+                    top: -30px;
+                    left: -213px;
+
+                }
+
+                // @include media-breakpoint-down(sm) {
+                //     display: none;
+                // }
+            }
+        }
+    }
+
+    .titulo {
+
+        font-size: 30px;
+        margin-bottom: 36px;
+        margin-left: 135px;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 40px;
+            text-align: left;
+            padding-top: 33px;
+            margin-left: 135px;
+            margin-bottom: 100px;
+        }
+    }
+
+    &-petalas-carrosel {
+        position: relative;
+        margin-top: 100px;
+
+        .group-petalas1 {
+            &::before {
+                content: '';
+                background: url(../images/detalhe-1.svg);
+                width: 300px;
+                height: 300px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: -365px;
+                left: -216px;
+
+                z-index: -1;
+
+                @include media-breakpoint-up(lg) {
+                    top: 251px;
+                    left: 163px;
+                }
+            }
+        }
+
+        .group-petalas2 {
+            &::before {
+                content: '';
+                background: url(../images/detalhe-2.svg);
+                width: 300px;
+                height: 300px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: -127px;
+                right: 153px;
+                z-index: -1;
+
+                @include media-breakpoint-down(sm) {
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+    .titulo-carrosel {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 63px;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 40px;
+            text-align: left;
+            padding-top: 33px;
+            margin-left: 135px;
+            margin-bottom: 100px;
+        }
+    }
+
     &-mais15carrossel {
         position: relative;
         margin-top: 100px;

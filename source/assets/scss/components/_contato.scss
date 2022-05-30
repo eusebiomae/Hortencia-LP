@@ -9,8 +9,14 @@
     position: relative;
 
     &-intro{
-        text-align: center;
         padding-bottom: 20px;
+        color: #fff;
+
+        h1 {
+            font-size: 34px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
     }
     
     .container{
@@ -27,6 +33,9 @@
     }
 
     &-label{
+        color: #fff;
+        font-weight: 600;
+        font-size: 17px;
         span{
             font-size: 80%;
         }

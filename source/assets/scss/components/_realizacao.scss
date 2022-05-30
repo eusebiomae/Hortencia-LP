@@ -1,8 +1,16 @@
 .realizacao{
-    background: #fff;
+    background: #f2f2f2;
+    padding: 0;
 
     .container {
         position: relative;
+    }
+
+    .faixa {
+        width: 100%;
+        height: 31px;
+        background-color: #F8A128 ;
+        margin-bottom: 40px;
     }
 
     .titulo {

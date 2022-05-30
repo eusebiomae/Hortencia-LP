@@ -6,7 +6,7 @@
        
         <% if(form_email) { %>
         <div class="form-group">
-            <label for="<%= form_prefixo %>_Contato" class="form-label">Por onde podemos conversar?</label>
+            <label for="<%= form_prefixo %>_Contato" class="form-label">Gostaria de ser contatado por </label>
             <select name="Forma_de_Contato" id="<%= form_prefixo %>_Contato" class="form-select js-select-contato" required>
                 <option value="" selected>Escolha uma opção de contato</option>
                 <option value="Email">E-mail</option>
@@ -18,18 +18,18 @@
         <% } %>
 
         <div class="form-group">
-            <label for="<%= form_prefixo %>_Nome" class="form-label">Qual o seu nome?</label>
+            <label for="<%= form_prefixo %>_Nome" class="form-label">Nome*</label>
             <input type="text" name="Nome" id="<%= form_prefixo %>_Nome" class="form-control" required>
             <div class="invalid-feedback">Digite seu nome.</div>
         </div>
         <div class="form-group">
-            <label for="<%= form_prefixo %>_Email" class="form-label">Poderia nos informar um e-mail?</label>
+            <label for="<%= form_prefixo %>_Email" class="form-label">E-mail*</label>
             <input type="email" name="Email" id="<%= form_prefixo %>_Email" class="form-control" required>
             <div class="invalid-feedback">Digite um e-mail válido.</div>
         </div>
         <div class="form-group">
-            <label for="<%= form_prefixo %>_Tel" class="form-label">E um telefone para contato? <% if(form_email) { %><span>(opcional)</span><%}%></label>
-            <input type="tel" name="Telefone" id="<%= form_prefixo %>_Tel" class="form-control" pattern=".{14,15}" maxlength="15" data-mask="tel" <% if(!form_email) { %>required<%}%> >
+            <label for="<%= form_prefixo %>_Tel" class="form-label">Telefone com DDD* <% if(form_email) { %><span>(opcional)</span><%}%></label>
+            <input type="tel" name="Telefone" id="<%= form_prefixo %>_Tel" class="form-control" pattern=".{14,15}" maxlength="15" data-mask="tel" required >
             <div class="invalid-feedback">Digite um telefone válido.</div>
         </div>
         

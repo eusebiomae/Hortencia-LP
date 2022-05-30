@@ -9,6 +9,10 @@
         left: 0px;        
         border-radius: 0px 15px 0px 0px;
         height: 54px;
+
+        @at-root .menu-active & {
+            opacity: 0;
+        }
     }
 
     @include media-breakpoint-up(lg){

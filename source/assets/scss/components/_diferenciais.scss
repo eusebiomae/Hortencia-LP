@@ -24,14 +24,20 @@
     }
 
     .titulo {
-        font-size: 40px;
+        h1 {
+            font-size: 30px;
+
+            @include media-breakpoint-up (lg) {
+                font-size: 40px;
+            }
+        }
         text-align: center;
         padding-top: 50px;
     }
 
     &-carrossel {
         position: relative;
-        margin-top: 100px;
+        margin-top: 30px;
 
         @include media-breakpoint-up(lg) {
             margin-top: 60px;
@@ -145,7 +151,7 @@
                     border: solid 1px #FF9400;
                     border-radius: 20px;
                     box-shadow: 0px 6px 11px #00000029;
-                    background: #fff;
+                    background: transparent linear-gradient(137deg, #FFFFFF 0%, #FFF7EC 100%) 0% 0% no-repeat padding-box;
 
                     @include media-breakpoint-up(lg) {
                         transform: scale(0.8);

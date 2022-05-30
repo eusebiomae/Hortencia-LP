@@ -18,7 +18,7 @@
 
     &-logos {
         margin-top: 28px;
-        align-items: center;
+        text-align: center;
         
         @include media-breakpoint-up(lg) {
             display: flex;
@@ -49,12 +49,12 @@
 
     &-logo-vendas {
         margin-top: 28px;
-        align-items: center;
+        text-align: center;
+        // align-items: center;
 
         @include media-breakpoint-up(lg) {
             display: flex;
-            gap: 15px;
-            justify-content: center;
+            justify-content: space-evenly;
             margin-top: 64px;
         }
 
@@ -83,6 +83,7 @@
 
                 @include media-breakpoint-down(sm) {
                     margin-top: 20px;
+                    justify-content: space-between;
                 }
             }
         }

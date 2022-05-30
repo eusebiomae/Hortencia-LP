@@ -8,10 +8,12 @@
     }
 
     &-titulo {
+        margin-bottom: 20px;
 
         @include media-breakpoint-down (sm) {
             display: flex;
             justify-content: center;
+            margin-bottom: 40px;
         }
 
         .content {
@@ -62,7 +64,7 @@
                 right: 0;
                 z-index: 2;
 
-                @include media-breakpoint-down(sm) {
+                @include media-breakpoint-down(md) {
                     width: 117px;
                     height: 66px;
                     top: 260px;
@@ -75,10 +77,46 @@
     .splide {
         &__slide {
             .item {
+                position: relative;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
+                figure {
+                    position: relative;
+
+                    figcaption {
+                        position: absolute;
+                        opacity: 0;
+                    }
+                }
+            }
+
+            .info {
+                position: relative;
+                z-index: 1;
+
+                @include media-breakpoint-up (lg) {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                .detalhes {
+                    p {
+                        font-size: 25px;
+                        text-transform: uppercase;
+                        margin-bottom: 5px;
+                        line-height: 1;
+                    }
+                }
+
+                .metragem {
+                    p {
+                        font-size: 35px;
+                        font-weight: bolder;
+                    }
+                }
             }
         }
     }

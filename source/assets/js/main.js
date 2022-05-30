@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
             breakpoints: {
                 640: {
                     perPage: 1, 
-
+                    gap: 40,
                 }
             }
         }).mount();

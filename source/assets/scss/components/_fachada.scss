@@ -46,19 +46,18 @@
             content: '';
             width: 100%;
             height: 389px;
-            background: #ba2025;
+            background: url(../images/bg-mobile.png);
+            background-size: cover;
+            background-repeat: no-repeat;
             position: absolute;
             top: 0;
             left: 0;
             z-index: -1;
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 56%);
 
             @include media-breakpoint-up(lg) {
                 width: 611px;
                 height: 654px;
                 background: url(../images/bg.png);
-                background-size: cover;
-                background-repeat: no-repeat;
                 top: 0;
                 left: calc(50% - 245px);
                 clip-path: none;

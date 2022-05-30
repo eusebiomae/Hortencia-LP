@@ -1,13 +1,13 @@
-.intro{
+.intro {
     padding: 70px 0 0;
     position: relative;
     color: #fff;
-    
+
     @include media-breakpoint-up(lg) {
         height: 100vh;
         background: url(../images/banner.jpg);
         background-size: cover;
-        
+
 
         &::before {
             content: '';
@@ -20,10 +20,11 @@
             z-index: 1;
         }
     }
-    
 
-    .container{
+
+    .container {
         position: relative;
+        margin-top: -45px;
 
         @include media-breakpoint-up(lg) {
             display: flex;
@@ -34,18 +35,27 @@
         }
     }
 
-    &-logo{
-        @include media-breakpoint-up(lg){
+    &-logo {
+        display: flex;
+        justify-content: center;
+
+        @include media-breakpoint-up(lg) {
             display: none;
         }
 
-        img{
-            width: 188px;
+        img {
+            width: 118px;
+
+            @include media-breakpoint-up(lg) {
+                width: 188px;
+            }
         }
     }
 
     &-infos {
         color: #000;
+        position: relative;
+        z-index: 1;
 
         @include media-breakpoint-up(lg) {
             color: #fff;
@@ -55,16 +65,22 @@
     }
 
     &-tit {
-        font-size: 48px;
-        font-weight: 600;
+        font-size: 35px;
+        margin-top: 25px;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 48px;
+            font-weight: 600;
+        }
     }
 
     p {
-        font-size: 31px;
-        font-weight: 300;
+        font-size: 30px;
+        font-weight: medium;
     }
 
     .destaque {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -74,38 +90,42 @@
         width: 314px;
         height: 71px;
         font-size: 16px;
-        margin-bottom: 41px;
+        margin-bottom: -35px;
         background: transparent linear-gradient(to right, #EC2C33 0%, #BA2025 100%);
         cursor: auto;
-        
-        @include media-breakpoint-up(lg){
+        margin-top: 15px;
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 41px;
             width: 385px;
             height: 85px;
         }
 
-        span{
-            &.uno{
+        span {
+            &.uno {
                 font-size: 25px;
             }
-    
+
             &.dos {
                 font-size: 30px;
-                @include media-breakpoint-up(lg){
+
+                @include media-breakpoint-up(lg) {
                     font-size: 35px;
                 }
             }
-    
+
             &.tres {
                 font-size: 54px;
-                @include media-breakpoint-up(lg){
+
+                @include media-breakpoint-up(lg) {
                     font-size: 63px;
                 }
             }
         }
-        
-      }
 
-    .btn{
+    }
+
+    .btn {
         display: none;
 
         @include media-breakpoint-up(lg) {
@@ -122,8 +142,8 @@
             border-radius: 23px;
             border: 4px solid #16120255;
             transition: all .2s ease-in-out;
-        
-            &:hover{
+
+            &:hover {
                 color: #fff;
             }
         }
@@ -134,7 +154,8 @@
         background-size: cover;
         background-repeat: no-repeat;
         margin: 0 -20px;
-        padding: 0 20px;
+        padding: 100px 20px 125px;
+        position: relative;
 
         @include media-breakpoint-up(lg) {
             background: none;
@@ -144,15 +165,37 @@
             z-index: 2;
             margin-right: 25px;
         }
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: #0005;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            @include media-breakpoint-up(lg) {
+                display: none;
+            }
+        }
     }
 
-    &-img{
+    .form-text {
+        position: relative;
+        font-size: 15px;
+        color: #fff;
+        line-height: 1;
+        margin: 0 0 15px;
+    }
+
+    &-img {
         position: absolute;
         bottom: 0;
         right: 0;
         z-index: 1;
 
-        img{
+        img {
             width: 116px;
             height: 98px;
 

@@ -1,32 +1,56 @@
-.header{
+.header {
     --header-height: 70px;
     position: absolute;
     width: 100%;
     z-index: 3;
 
-    @include media-breakpoint-up(lg){
+    @include media-breakpoint-up(lg) {
         background: #fff;
     }
-    
-    .container{
+
+    .container {
         display: flex;
         align-items: center;
         height: var(--header-height);
-        
-        @include media-breakpoint-up(lg){
+
+        @include media-breakpoint-up(lg) {
             justify-content: space-between;
         }
     }
 
-    &-logo{
-        @include media-breakpoint-down(md){
+    &-logo {
+        @include media-breakpoint-down(md) {
             display: none;
         }
     }
 }
 
-.menu{
-    @include media-breakpoint-down(lg){
+.menu {
+
+    &-grupo {
+        position: relative;
+    
+        .grp-menu {
+            &::before {
+                content: '';
+                background: url(../images/grupo-loc2.svg);
+                width: 295px;
+                height: 165px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 2;
+    
+                @include media-breakpoint-down(sm) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
         overflow-x: hidden;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
@@ -42,95 +66,109 @@
         background: #ccc;
         transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
 
-        @at-root .menu-active &{
+        @at-root .menu-active & {
             opacity: 1;
             transform: translateX(0);
             visibility: visible;
         }
-    } 
-    
-    nav{
-        
-        @include media-breakpoint-down(lg){
+    }
+
+
+    nav {
+
+        @include media-breakpoint-down(lg) {
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 20px;
             text-align: center;
             min-height: 100%;
+            background-color: #F8A128;
         }
     }
 
-    ul{
+    ul {
         padding: 0;
         margin: 0;
         list-style: none;
 
-        @include media-breakpoint-up(lg){
+        @include media-breakpoint-up(lg) {
             display: flex;
             align-items: center;
         }
     }
 
-    li{
-        
-        @include media-breakpoint-down(lg){
+    li {
+
+        @include media-breakpoint-down(lg) {
             margin-bottom: 20px;
         }
 
-        @include media-breakpoint-up(lg){
+        @include media-breakpoint-up(lg) {
             margin-left: 20px;
         }
     }
 
-    &-logo{
+    &-logo {
         margin-bottom: 50px;
 
-        @include media-breakpoint-up(lg){
+        @include media-breakpoint-up(lg) {
             display: none;
         }
     }
 
-    &-link{
-        font-size: 18px;
-        color: #444;
+    &-link {
+        font-size: 25px;
+        color: #fff;
 
-        @include media-breakpoint-up(lg){
-            font-size: 16px;
+        @include media-breakpoint-up(lg) {
+            font-size: 18px;
+            color: #000;
         }
 
-        &:hover{
+        &:hover {
             color: #444;
         }
 
     }
 
-    &-destaque{
-        --bg-destaque: #444;
-
-        display: inline-flex;
+    &-destaque {
+        --bg-destaque: transparent linear-gradient(to right, #EC2C33, #BA2025);
+        display: flex;
+        justify-content: center;
         align-items: center;
         position: relative;
         padding: 15px 20px;
-        font-size: 18px;
+        font-size: 25px;
         background: var(--bg-destaque);
         color: #fff;
-        
-        @include media-breakpoint-up(lg){
+        border-radius: 20px;
+        width: 222px;
+        height: 48px;
+
+        @include media-breakpoint-up(lg) {
             padding: 0 2px 0 20px;
             line-height: var(--header-height);
             height: var(--header-height);
-            font-size: 16px;
+            background: transparent linear-gradient(to left, #F6CB20 0%, #F6CB20 0%, #FFE57B 100%);
+            font-size: 14px;
+            width: 176px;
+            height: 38px;
+            color: #000;
         }
 
-        i{
-            font-size: 24px;
-            margin-left: 5px;
+        i {
+            font-size: 15px;
+            margin-right: 10px;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 12px;
+            }
         }
 
-        &::after{
+        &::after {
 
-            @include media-breakpoint-up(lg){
+            @include media-breakpoint-up(lg) {
                 content: "";
                 width: 50vw;
                 height: 100%;
@@ -142,58 +180,74 @@
             }
         }
 
-        &:hover{
+        &:hover {
             color: #fff;
+        }
+    }
+
+    img {
+        width: 158px;
+        position: absolute;
+        bottom: 0;
+        left: 106px;
+        background-color: #fff;
+        padding: 19px;
+
+        @include media-breakpoint-up(lg) {
+            display: none;
         }
     }
 }
 
-.btn-menu{
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
+.btn-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
     z-index: 11;
     padding: 0;
     border: 0;
     background: none;
 
-    @include media-breakpoint-up(lg){
+    @include media-breakpoint-up(lg) {
         display: none;
     }
 
-    &-icon{
+    &-icon {
         display: flex;
         flex-flow: column;
         align-items: center;
         justify-content: center;
-        width: 50px;
-        height: 50px;
-        background: #000;
+        width: 66px;
+        height: 66px;
+        background: #F8A128;
+        border-radius: 0 0 0 20px;
 
-        &::before, &::after, span{
+        &::before,
+        &::after,
+        span {
             content: "";
             width: 26px;
             height: 2px;
             background: #fff;
             margin: 3px 0;
-            transition: all .3s cubic-bezier(.42,0,.15,1.49);
+            transition: all .3s cubic-bezier(.42, 0, .15, 1.49);
         }
 
-        &::after{
-            transform: translateX(-15%) scaleX(0.7) ;
+        &::after {
+            transform: translateX(-15%) scaleX(0.7);
         }
 
-        @at-root .menu-active &{
+        @at-root .menu-active & {
 
-            &:before{
+            &:before {
                 transform: translateY(8px) rotate(45deg) scaleX(0.7);
             }
 
-            span{
+            span {
                 opacity: 0;
             }
 
-            &:after{
+            &:after {
                 transform: translateY(-8px) rotate(-45deg) scaleX(0.7);
             }
         }

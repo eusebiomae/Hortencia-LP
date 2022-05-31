@@ -73,15 +73,16 @@
 }
 
 .box-mensagem{
-    background: var(--bg-contato);
-    height: calc(100% + 20px);
+    background: transparent linear-gradient(to right, #e6a346 0%, #f69c20 100%);
+    // background: #f69c20;
+    height: calc(100% + 40px);
     width: calc(100% + 20px);
     align-items: center;
     display: flex;
     flex-flow: column;
     justify-content: center;
     left: - 10px;
-    top: -10px;
+    top: -40px;
     position: absolute;
     transition: all .2s ease-in-out;
     opacity: 0;

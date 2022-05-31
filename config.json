@@ -2,7 +2,7 @@
     "nome": "JJR Hortência",
     "title": "Apartamento à venda em Sorocaba | 2 e 3 dorms. | JJR Hortência",
     "description": "Plantas de 51 m² a 71 m², com lazer completo e localizado na Vila Hortência. Compre pelo Casa Verde e Amarela. Clique!",
-    "GA": "",
+    "GA": "UA-230280207-2",
     "facebook": "",
     "hubid": "7f39f8317f462",
     "telefone": "(11) 9999-9999",
@@ -22,10 +22,7 @@
             "size_thumb_mob": {"w": 480, "h": 320},
             "path": "images/lazer/",
             "legendas": [
-                "Imagem 1",
-                "Imagem 2",
-                "Imagem 3",
-                "Imagem 4"
+                ""
             ]
         }
     ]

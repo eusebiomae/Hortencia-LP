@@ -46,11 +46,14 @@
         };
 
         .yees {
-            width: auto;
-            height: auto;
+            width: 263px;
+            height: 60px;
+            margin-top: 10px;
+            margin-left: 21px;
 
             @include media-breakpoint-down (sm) {
                 margin-top: 35px;
+                margin-left: 0;
             }
         }
     }

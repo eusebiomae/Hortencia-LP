@@ -22,7 +22,18 @@
             "size_thumb_mob": {"w": 480, "h": 320},
             "path": "images/lazer/",
             "legendas": [
-                ""
+                "Beach Tenis -imagens meramente ilustrativas",
+                "Salão Gourmet -imagens meramente ilustrativas",
+                "Sauna -imagens meramente ilustrativas",
+                "Spa - imagens meramente ilustrativas",
+                "Bike Sharing - imagens meramente ilustrativas",
+                "Brinquedoteca -imagens meramente ilustrativas",
+                "Fitness -imagens meramente ilustrativas",
+                "Pet Care -imagens meramente ilustrativas",
+                "Pet Place -imagens meramente ilustrativas",
+                "Playground -imagens meramente ilustrativas",
+                "Salão de Beleza -imagens meramente ilustrativas",
+                "Salão de Jogos -imagens meramente ilustrativas"
             ]
         }
     ]

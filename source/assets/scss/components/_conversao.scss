@@ -57,7 +57,7 @@
         }
         .icon-pin {
             @include media-breakpoint-down (md) {
-                display: none;
+                font-size: 27px;
             }
             @include media-breakpoint-up (lg) {
                 font-size: 32px;

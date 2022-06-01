@@ -48,9 +48,9 @@
         ;
 
         .yees {
-            width: 263px;
-            height: 60px;
-            margin-top: 10px;
+            width: auto;
+            height: 45px;
+            margin-top: 20px;
             margin-left: 21px;
 
             @include media-breakpoint-down (sm) {
@@ -60,8 +60,24 @@
         }
     }
 
+    .divisor {
+        @include media-breakpoint-down (md) {
+            width: 104px;
+            border: 1px solid #000;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            display: inline-flex;
+        }
+
+        @include media-breakpoint-up (lg) {
+            height: 104px;
+            border-right: 1px solid #000;
+            position: relative;
+        }
+    }
+
     &-logo-vendas {
-        margin-top: 28px;
+        margin-top: 45px;
         text-align: center;
         // align-items: center;
 
@@ -76,6 +92,7 @@
             @include media-breakpoint-up (lg) {
                 display: flex;
                 gap: 35px;
+                margin-top: 15px;
             }
 
             p {
@@ -87,6 +104,7 @@
                 @include media-breakpoint-up(lg) {
                     font-size: 15px;
                     align-self: center;
+                    margin-bottom: 15px;
                 }
             }
 
@@ -97,6 +115,12 @@
                 @include media-breakpoint-down(sm) {
                     margin-top: 20px;
                     justify-content: space-between;
+                }
+            }
+
+            .casavea {
+                @include media-breakpoint-down (md) {
+                    margin-bottom: 40px;
                 }
             }
         }

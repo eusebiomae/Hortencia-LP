@@ -193,6 +193,10 @@
             --nav-margin: 510px;
             --nav-bg: #000;
 
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 100px;
+            }
+
             &__track {
                 max-width: 850px;
                 margin: 0 auto;
@@ -248,40 +252,36 @@
 
     }
 
-    // &-mais15carrossel{
-    //     .splide {
-    //         --nav-margin: 400px;
-    //         --nav-bg: #000;
+    &-grupo-foot {
+        position: relative;
 
-    //         &__slide {
+        .grp-lazer-foot {
+            &::before {
+                content: '';
+                background: url(../images/grupo-diferenciais.svg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 150px;
+                height: 84px;
+                position: absolute;
+                top: 43px;
+                right: -57px;
+                z-index: 2;
+                transform: rotate(180deg);
 
-    //             border: solid 1px #005BAA;
-    //             border-radius: 20px;
-    //             box-shadow: 0px 6px 11px #00000029;
-    //             margin: 0 37px 0;
+                @include media-breakpoint-up (lg) {
+                    width: 308px;
+                    height: 172px;
+                    top: -178px;
+                    left: 0;
+                    transform: none;
 
-    //             .item {
-    //                 display: block;
-    //                 text-align: center;
-    //                 padding: 20px;
-    //             }
+                }
 
-    //             .icone {
-    //                 font-size: 45px;
-    //                 color: #005BAA;
-    //             }
-
-    //             p {
-    //                 text-transform: uppercase;
-    //                 font-size: 20px;
-    //             }
-
-    //             .legenda {
-    //                 text-transform: capitalize;
-    //             }
-    //         }       
-
-    //     }
-
-    // }
+                // @include media-breakpoint-down(sm) {
+                //     display: none;
+                // }
+            }
+        }
+    }
 }

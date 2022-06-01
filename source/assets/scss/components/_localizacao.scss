@@ -116,7 +116,16 @@
                 transform: rotate(-31deg);
 
                 @include media-breakpoint-down(sm) {
-                    display: none;
+                    background: url(../images/group-loc22.svg);
+                    width: 174px;
+                    height: 166px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: -144px;
+                    left: 271px;
+                    z-index: 1;
+                    transform: rotate(19deg);
                 }
             }
         }
@@ -137,7 +146,16 @@
                 transform: rotate(-28deg);
 
                 @include media-breakpoint-down(sm) {
-                    display: none;
+                    content: '';
+                    background: url(../images/group-loc2.svg);
+                    width: 301px;
+                    height: 339px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: 315px;
+                    left: 194px;
+                    z-index: 1;
                 }
             }
         }
@@ -145,6 +163,24 @@
 
     &-desc {
         margin-top: 32px;
+
+        &::before {
+            content: '';
+            background: url(../images/petalas-loc.svg);
+            width: 53px;
+            height: 77px;
+            background-repeat: no-repeat;
+            display: flex;
+            position: absolute;
+            top: 8px;
+            left: -65px;
+            z-index: -1;
+
+            @include media-breakpoint-down(sm) {
+                top: 21px;
+                left: 22px;
+            }
+        }
 
         @include media-breakpoint-up(lg) {
             margin-top: 63px;
@@ -253,6 +289,7 @@
 
     &-mapa {
         background-color: #b9141a;
+        background-position: center;
         display: flex;
         align-items: center;
         justify-content: center;

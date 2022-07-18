@@ -48,10 +48,14 @@
             color: var(--btn-color);
             border-radius: 15px 0;
             // border: 2px solid #88927F;
-
+            
             @include media-breakpoint-down(lg){
-               border: none;
-               border-radius: 0px 15px 0px 0px;
+                border: none;
+                border-radius: 0px 15px 0px 0px;
+            }
+
+            @include media-breakpoint-up(lg){
+                box-shadow: 2px 2px #f6cb20;
             }
 
         }
@@ -92,13 +96,17 @@
             background: var(--btn-bg);
             opacity: 0;
             visibility: hidden;
-            transition: all .2s ease-in-out;
+            transition: all .3s ease-in-out;
             transform: translate(10px);
             // border: 2px solid #88927F;
             border-radius: 15px 0;
-
+            
             @include media-breakpoint-down(lg){
                 display: none;
+            }
+
+            @include media-breakpoint-up(lg){
+                box-shadow: 2px 2px #f6cb20;
             }
         }
 

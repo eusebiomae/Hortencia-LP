@@ -47,7 +47,7 @@
             background: var(--btn-bg);
             color: var(--btn-color);
             border-radius: 15px 0;
-            border: 2px solid #88927F;
+            // border: 2px solid #88927F;
 
             @include media-breakpoint-down(lg){
                border: none;
@@ -81,8 +81,8 @@
         span{
             position: absolute;
             top: 0;
-            right: calc(100% - 8px);
-            z-index: 2;
+            right: calc(100% - 14px);
+            z-index: 1;
             border-radius: 5px 0 0 5px;
             display: flex;
             align-items: center;
@@ -94,7 +94,7 @@
             visibility: hidden;
             transition: all .2s ease-in-out;
             transform: translate(10px);
-            border: 2px solid #88927F;
+            // border: 2px solid #88927F;
             border-radius: 15px 0;
 
             @include media-breakpoint-down(lg){

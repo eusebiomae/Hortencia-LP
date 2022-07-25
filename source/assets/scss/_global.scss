@@ -307,6 +307,7 @@ figure{
     to { transform: rotate(360deg); }
 }
 
+//Quebra de linha para Desktop e Mobile
 br{
     &.desk{
         display: none;
